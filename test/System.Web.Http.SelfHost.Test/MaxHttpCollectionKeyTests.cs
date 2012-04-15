@@ -87,7 +87,7 @@ namespace System.Web.Http.SelfHost
         [Theory]
         [InlineData("PostCustomerFromUri")]
         [InlineData("GetWithQueryable")]
-        public void PostManyCollidingKeysInUriThrows(string actionName)
+        public void PostManyKeysInUriThrows(string actionName)
         {
             // Arrange
             HttpRequestMessage request = new HttpRequestMessage();
